@@ -33,5 +33,5 @@ Agenda
 Reference Links
 --------------
 
-* [Our Demos](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+* [Our Demos](https://xlaboration.github.io/Code-School---Animation/)
 
