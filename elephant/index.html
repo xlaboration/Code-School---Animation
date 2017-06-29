@@ -1,0 +1,49 @@
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. "DO NOT" alter the tokens in the template html as they are required during publishing.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- write your code here -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Edward Pescetto is an ASP.Net Application Developer.">	
+<meta name="title" content="Edward Pescetto" />
+<title>Edward Pescetto</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="AnimatedElephantSample.js"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.AnimatedElephantSample();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<!-- write your code here -->
+
+</head>
+<body onload="init();" style="background-color:#FFFFFF;margin:0px;">
+	<canvas id="canvas" width="800" height="800" style="background-color:#FFFFFF"></canvas>
+
+</body>
+</html>
